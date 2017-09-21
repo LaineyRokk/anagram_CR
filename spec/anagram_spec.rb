@@ -41,3 +41,10 @@ describe('Anagram#is_palindrome?') do
     expect(testObj0.is_palindrome?()).to(eq(false))
   end
 end
+
+describe('Anagram#is_antigram?') do
+  testObj0.word = testObj0.reformat_input(testObj0.word)
+  it('checks if there are any character matches between the two strings') do
+    expect(testObj0.is_antigram?("Goldfish")).to(eq(false))
+  end
+end

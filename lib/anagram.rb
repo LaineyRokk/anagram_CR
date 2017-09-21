@@ -35,4 +35,10 @@ class Anagram
       end
     end
 
+    def is_antigram?(inputWord)
+      inputWord.each_char do |character|
+        return false if @word.chars.include?(character)
+      end
+    end
+
 end
