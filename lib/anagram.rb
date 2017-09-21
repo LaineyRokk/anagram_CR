@@ -12,3 +12,11 @@ class Anagram
       return true
     end
   end
+
+  def reformat_input(word)
+      reformatted = word.downcase
+      reformatted = reformatted.chars.sort(&:casecmp).join
+      return reformatted
+  end
+
+end

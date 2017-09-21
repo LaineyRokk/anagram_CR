@@ -9,3 +9,9 @@ describe('Anagram#is_word?') do
     expect(testObj.is_word?("trcsln")).to(eq(false))
   end
 end
+
+describe('Anagram#reformat_input') do
+  it('changes all input to downcase, and resorts the letters of each word into alphabetical order') do
+    expect(testObj.reformat_input("Creates")).to(eq("aceerst"))
+  end
+end
