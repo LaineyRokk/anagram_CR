@@ -27,5 +27,12 @@ class Anagram
     end
   end
 
-  
+  def is_palindrome?()
+      if @word == @word.reverse
+        return true
+      else
+        return false
+      end
+    end
+
 end

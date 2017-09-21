@@ -34,3 +34,10 @@ describe('Anagram#is_anagram?') do
     expect(testObj2.is_anagram?(testObj3.word)).to(eq(true))
   end
 end
+
+describe('Anagram#is_palindrome?') do
+  testObj0.word = testObj0.reformat_input(testObj0.word)
+  it('reverses the the instance string and compares it to the original') do
+    expect(testObj0.is_palindrome?()).to(eq(false))
+  end
+end
