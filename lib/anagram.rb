@@ -19,4 +19,13 @@ class Anagram
       return reformatted
   end
 
+  def is_anagram?(inputWord)
+    if @word == inputWord
+      return true
+    else
+      return false
+    end
+  end
+
+  
 end
